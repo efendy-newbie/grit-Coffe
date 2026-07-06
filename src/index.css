@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  --color-charcoal: #1C1C1C;
+  --color-terracotta: #C0603C;
+  --color-terracotta-dark: #A04A2C;
+  --color-sand: #EDE8E3;
+  --color-cream: #F9F9F9;
+  --color-text-primary: rgba(0, 0, 0, 0.87);
+  --color-text-secondary: rgba(0, 0, 0, 0.58);
+
+  --animate-fade-in: fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  --animate-slide-up: slide-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  --animate-slide-in-right: slide-in-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+:root {
+  scroll-behavior: smooth;
+  background-color: #F9F9F9;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: var(--font-sans);
+}
+
+/* Custom classes for button interactive scales and focus outlines */
+.btn-primary {
+  background-color: #C0603C;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 14px 28px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #A04A2C;
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #1C1C1C;
+  border: 2px solid #1C1C1C;
+  border-radius: 4px;
+  padding: 12px 26px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+}
+
+.btn-outline:active {
+  transform: scale(0.97);
+}
+
+.bento-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EDE8E3;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.bento-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #C0603C;
+}
+

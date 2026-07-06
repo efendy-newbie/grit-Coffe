@@ -1,0 +1,6 @@
+{
+  "name": "Grit Coffee",
+  "description": "Strong Brew. Stronger Grit. Portfolio showcase landing page for specialty coffee shop GRIT COFFEE.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
