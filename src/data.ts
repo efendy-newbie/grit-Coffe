@@ -4,6 +4,10 @@
  */
 
 import { MenuItem, GalleryItem } from "./types";
+import menuSignatureImg from "./assets/images/menu_signature_1783338083646.jpg";
+import galleryInteriorImg from "./assets/images/gallery_interior_1783338097371.jpg";
+import galleryWorkingImg from "./assets/images/gallery_working_1783338112576.jpg";
+import galleryDetailImg from "./assets/images/gallery_detail_1783338129531.jpg";
 
 export const BRAND_INFO = {
   name: "GRIT COFFEE",
@@ -30,7 +34,7 @@ export const MENU_ITEMS: MenuItem[] = [
     name: "Grit Espresso",
     price: "Rp 35k",
     description: "Our signature double-shot pulled with relentless precision. A heavy-bodied, sweet profile with rich cacao notes and a intense crema finish.",
-    image: "/src/assets/images/menu_signature_1783338083646.jpg",
+    image: menuSignatureImg,
     size: "large",
     badge: "Signature"
   },
@@ -65,21 +69,21 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "interior-main",
     title: "Main Roastery & Cafe",
     subtitle: "A perfect blend of dark metal and warm wooden tones",
-    image: "/src/assets/images/gallery_interior_1783338097371.jpg",
+    image: galleryInteriorImg,
     gridSpan: "md:col-span-2 md:row-span-1"
   },
   {
     id: "workspace-focus",
     title: "Focus-Ready Workspace",
     subtitle: "Ample sockets, quiet corners, and high-speed fiber",
-    image: "/src/assets/images/gallery_working_1783338112576.jpg",
+    image: galleryWorkingImg,
     gridSpan: "md:col-span-1 md:row-span-2"
   },
   {
     id: "beans-detail",
     title: "Relentless Sourcing",
     subtitle: "100% Single Origin Arabica beans roasted with grit",
-    image: "/src/assets/images/gallery_detail_1783338129531.jpg",
+    image: galleryDetailImg,
     gridSpan: "md:col-span-1 md:row-span-1"
   },
   {

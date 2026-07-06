@@ -6,6 +6,7 @@
 import React from "react";
 import { ArrowDown } from "lucide-react";
 import { BRAND_INFO } from "../data";
+import heroBaristaImg from "../assets/images/hero_barista_1783338069164.jpg";
 
 export default function Hero() {
   const handleExploreMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -96,7 +97,7 @@ export default function Hero() {
           {/* Image */}
           <div className="relative overflow-hidden rounded-md shadow-lg border border-sand/40 max-w-full md:max-w-md lg:max-w-lg aspect-[3/4]">
             <img
-              src="/src/assets/images/hero_barista_1783338069164.jpg"
+              src={heroBaristaImg}
               alt="A professional barista pouring hot water to brew single-origin coffee"
               className="w-full h-full object-cover grayscale-[10%] contrast-[105%] hover:scale-105 transition-transform duration-[800ms] ease-out"
               referrerPolicy="no-referrer"
